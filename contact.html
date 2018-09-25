@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ 
+      <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <style>
+        .abc{
+            height:20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.9);
+        }
+    
+        .footer{
+            background-color: black;
+            height:80px;
+            color: white;
+        }
+        
+        .customdiv2{
+            
+               padding: 15px;
+        font-size: 18px;
+        min-height: 300px;
+       
+            color:white;
+        }
+        .foot {
+            background-color:black;
+        }
+        .customdiv2 a{
+            color:#fff;
+        }
+        
+        .customdiv2 a:hover {
+            color:blueviolet;
+        }
+    
+    </style>
+
+    
+</head>
+<body>
+<!--<div class="container-fluid"> -->
+    <nav class="navbar navbar-dark navbar-expand-sm bg-primary">
+        <div class="container-fluid">
+            <a  href="index.html" class="navbar-brand">
+                <img src="bootstrap/img/logo.PNG"> </a>
+
+            <button class="navbar-toggler" data-toggle="collapse"
+                    data-target="#responsiveNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="responsiveNavBar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a  href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hello" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <form class="form-inline ml-auto">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Search...">
+                    </div>
+                    <a class="btn btn-outline-success btn-sm">Search</a>
+                </form>
+                
+                
+                
+            </div>
+        </div>
+    </nav>
+  
+<div class="container-fluid">
+  <h2>NEW USER REGISTER HERE!!!!!</h2>
+  <hr class="abc">
+      <div class="row">
+      <div class="col-lg-6">
+    <div class="form-group">
+      <label for="usr">FIRST NAME</label>
+      <input type="text" class="form-control" id="usr" placeholder="first name">
+    </div>
+      </div>
+      
+      
+      <div class="col-lg-6">
+    <div class="form-group">
+      <label for="pwd">LAST NAME</label>
+      <input type="password" class="form-control" id="pwd" placeholder="last name">
+    </div>
+      </div>      
+    </div>
+    
+      
+    <div class="row">
+        <div class="col-lg-6">
+    <div class="form-group">
+      <label for="pwd">MOBILE NUMBER</label>
+      <input type="password" class="form-control" id="pwd" palceholder="Ex:john">
+    </div>
+      </div>
+          
+    
+         <div class="col-lg-6">
+    <div class="form-group">
+      <label for="pwd">EMAIL ID</label>
+      <input type="text" class="form-control" id="pwd"  placeholder="newuser@gmail.com">
+    </div>
+      </div>
+    </div>
+             <div class="row">
+            <div class="col-lg-6">
+    <div class="form-group">
+      <label for="pwd">ENTER PASSWORD</label>
+      <input type="password" class="form-control" id="pwd" >
+    </div>
+      </div>
+    
+    
+     <div class="col-lg-6">
+    <div class="form-group">
+      <label for="pwd">CONFIRM PASSWORD</label>
+      <input type="password" class="form-control" id="pwd" >
+    </div>
+      </div>
+        </div>
+    
+             <div class="row">
+            <div class="col-md-6">
+                   <div class="form-group">
+                       <label for="pwd">**SELECT STATE**</label>
+             <select class="form-control" Id="pwd">
+             <option> TELANGANA</option>
+              <option> Mumbai</option>
+                 <option> chennai</option>
+                 <option> kolkata</option>
+                 <option> Banglore</option>
+             </select>
+             </div>
+                      </div>
+    
+    
+    
+     <div class="col-md-6">
+                   <div class="form-group">
+                        <label for="pwd">**SELECT CITY**</label>
+             <select class="form-control" Id="pwd">
+             <option> Hyderabad</option>
+              <option> Mumbai</option>
+                 <option> chennai</option>
+                 <option> kolkata</option>
+                 <option> Banglore</option>
+             </select>
+             </div>
+                      </div>
+    </div>
+    
+    <p>Enter security code here</p>
+    
+    
+  
+
+<body onload="generateCaptcha()">
+ 
+<script>
+var captcha;
+ 
+function generateCaptcha() {
+    var a = Math.floor((Math.random() * 10));
+    var b = Math.floor((Math.random() * 10));
+    var c = Math.floor((Math.random() * 10));
+    var d = Math.floor((Math.random() * 10));
+ 
+    captcha=a.toString()+b.toString()+c.toString()+d.toString();
+    
+    document.getElementById("captcha").value = captcha;
+}
+ 
+function check(){
+    var input=document.getElementById("inputText").value;
+ 
+    if(input==captcha){
+        alert("Equal");
+    }
+    else{
+        alert("Not Equal");
+    }
+}
+</script>
+ 
+<input type="text" id="captcha" disabled/><br/><br/>
+<input type="text" id="inputText"/><br/><br/>
+    <input type="checkbox">I confirm that the information furnished above is true<br/><br/>
+<button onclick="generateCaptcha()" type="submit" class="btn btn-success">Refresh</button>
+<button onclick="check()" type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span>Submit</button>
+ 
+</body>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15224.657082398864!2d78.356811!3d17.45184995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1537442092688" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+    
+    
+    </div>
+
+    
+     <div class="container-fluid foot">
+    <div class="row">
+       <div class="col-lg-4">
+        <div class="customdiv2">
+         <a href="index.html">  <img src="bootstrap/img/logo.PNG"> </a> 
+           
+           
+           
+           
+           </div>
+        </div> 
+        
+           <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3> COMPANY </h3>
+            <a href="#">Careers</a><br>
+            <a href="#">About Us</a><br>
+            <a href="#">For Partners</a><br>
+            <a href="#">Terms</a><br>
+            <a href="#">Privacy Policy</a><br>
+            <a href="#">Contact Us</a><br>
+           
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+        <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3>  PARTNER </h3>
+         <a href="#">PropTiger</a><br>
+         <a href="#">Makaan</a><br>
+         <a href="#">IREF</a><br>
+         <a href="#">RealtyBI</a><br>
+         <a href="#">Realestate.com.au</a><br>
+         <a href="#">Realtor.com</a><br>
+           
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+        
+           <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3>  EXPLORE</h3>
+        <a href="#">News</a><br>
+        <a href="#">Data Sciences</a><br>
+        <a href="#">Home Loans</a><br>
+        <a href="#">Sitemap</a><br>
+        <a href="#">Feedback</a><br>
+        <a href="#">International</a><br>
+           
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+           <div class="col-md-4 col-lg-2">
+          <div class="customdiv2">
+              <h3> FOLLOW</h3>
+<a href="#">Facebook</a><br>
+<a href="#">Twitter</a><br>
+<a href="#">LinkedIn</a><br>
+<a href="#">Google+</a><br>
+ <a href="#">Instagram</a><br>
+<a href="#">Pinterest</a><br>
+<a href="#">Youtube</a><br>
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+        </div>
+    
+    
+    </div>
+    
+  
+    
+</body>
+</html>

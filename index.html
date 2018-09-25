@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+ 
+    <title>Navbar in Bootstrap4</title>
+    <style>
+            
+            .customDiv{
+        padding: 15px;
+        font-size: 18px;
+        min-height: 300px;
+        background-color:aliceblue;
+        margin-bottom: 10px;
+          box-shadow:  30px 0 30px #0004;      
+        } 
+        
+        
+        
+     
+        .footer{
+            background-color: black;
+            height:80px;
+            color: white;
+        }
+        
+        .customdiv2{
+            
+               padding: 15px;
+        font-size: 18px;
+        min-height: 300px;
+       
+            color:white;
+        }
+        .foot {
+            background-color:black;
+        }
+        .customdiv2 a{
+            color:#fff;
+        }
+        
+        .customdiv2 a:hover {
+            color:blueviolet;
+        }
+  
+    </style>
+ 
+</head>
+<body>
+  
+<!--<div class="container-fluid"> -->
+    <nav class="navbar navbar-dark navbar-expand-sm bg-primary ">
+        <div class="container-fluid">
+            <a  href="index.html" class="navbar-brand">
+                <img src="bootstrap/img/logo.PNG"> </a>
+
+            <button class="navbar-toggler" data-toggle="collapse"
+                    data-target="#responsiveNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="responsiveNavBar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a  href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hello" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                           <a  href="contact.html" class="nav-link">Contact</a>
+                   
+                    </li>
+                    <li class="nav-item">
+                     <a href="#" class="nav-link"
+                             data-container="body" data-toggle="popover" data-placement="bottom" 
+                        > Download App</a>
+                
+                
+            
+                
+                       </li>
+    
+                </ul>
+                
+                <form class="form-inline ml-auto">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Search...">
+                    </div>
+                    <a class="btn btn-outline-success btn-sm">Search</a>
+                </form>
+                
+                
+                
+            </div>
+        </div>
+    </nav>
+    
+ <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="bootstrap/img/Lovely-Luxury-Homes-For-Sale-In-San-Diego-Ca-21-For-Designing-Home-Inspiration-with-Luxury-Homes-For-Sale-In-San-Diego-Ca.jpg" alt="Los Angeles" width="100%" height="600">
+      <div class="carousel-caption">
+                    <h1><strong>HOUSING</strong></h1>
+                    <h2>INTRODUCING HOUSING ECO-LUXURY RESIDENCES</h2>
+                    <h2>LUXURY PERFECT BALANCE WITH NATURE</h2>
+                    <a  href="sellproperty.html" class="btn btn-success">sell property 1 lacs+ sellers</a>
+     
+    </div>
+      </div>
+   
+    <div class="carousel-item">
+      <img src="bootstrap/img/ocean-front-villa.jpg" alt="Chicago" width="100%" height="600">
+        <div class="carousel-caption">
+                    <h1><strong>HOUSING</strong></h1>
+                    <h2>INFRASTRUCTURE, AFFORADABLE HOUSING MAKES HYDERABAD A GREAT CITY  </h2>
+                    <h2>LUXURY PERFECT BALANCE WITH NATURE</h2>
+                    <a  href="sellproperty.html" class="btn btn-success">KONW MORE</a>
+        
+        </div>
+        
+    </div>
+    <div class="carousel-item">
+      <img src="bootstrap/img/maxresdefault%20(1).jpg" alt="New York" width="100%" height="600">
+        <div class="carousel-caption">
+                    <h1><strong>HOUSING</strong></h1>
+                    <h2>REALITY MARKET OF HOUSING BEING IN OUR SERVICES</h2>
+                    <h2>LUXURY PERFECT BALANCE WITH NATURE</h2>
+                    <a  href="sellproperty.html" class="btn btn-success">KNOW MORE</a>
+       
+    </div>
+  </div>
+     </div>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+    <h1><b id="hello"><center>ABOUT US</center></b></h1>
+    <h2>FEATURED DEVELOPERS</h2>
+    <div class="container-fluid">
+    <div class="row">
+        
+            <div class="col-lg-4">
+     <div class="customDiv">
+                
+                <img src="bootstrap/img/img2/anukampagroup-terraces1.jpg" width="400px" height="250px">
+                <p>HAPPY HOMES</p>     
+                <h3>HYDERABAD</h3>
+                
+                </div>
+  </div> 
+              <div class="col-lg-4">
+     <div class="customDiv">
+                  
+                   <img src="bootstrap/img/img2/centre-of-innovation-and-technology.jpg" width="400px" height="250px">
+               <P>ADDOR CLOUD9</P> 
+                <h3>BANGALORE</h3>
+                  
+                 </div>
+  </div> 
+                  <div class="col-lg-4">
+     <div class="customDiv">
+                    <img src="bootstrap/img/img2/ecolife-s-elements-of-nature-projectimagelogo_20161219044557386290.jpg" width="400px" height="250px">
+               <P>ARVIND AVASA</P> 
+                <h3>KOLKATA</h3>
+                  
+                      </div>
+  </div> 
+        </div>
+    </div>
+    
+     <h2>FEATURED PROJECTS</h2>
+    
+      <div class="container-fluid">
+    <div class="row">
+         
+                   <div class="col-lg-4">
+     <div class="customDiv">
+                       <img src="bootstrap/img/img2/godrej-properties-garden-city-elevation-698376.jpeg" width="400px" height="250px">
+               <P>VIRUTI RUHIII</P> 
+                <h3>CHENNAI</h3>
+                      
+                       </div>
+  </div> 
+              <div class="col-lg-4">
+     <div class="customDiv">
+                       <img src="bootstrap/img/img2/house-building-city-construction-concept-260nw-189023420.jpg" width="400px" height="250px">
+               <P>GALAXY NIKAO</P> 
+                <h3>KERALA</h3>
+             
+                  </div>
+  </div> 
+                  <div class="col-lg-4">
+     <div class="customDiv">
+                      <img src="bootstrap/img/img2/images%20(1).jpg" width="400px" height="250px">
+               <P>NAROADA</P> 
+                <h3>AHAMADABAD</h3>
+                   
+                      </div>
+  </div>
+         </div>
+    </div>
+    
+    <h2>FEATURED COLLECTION</h2>
+      <div class="container-fluid">
+    <div class="row">
+        
+        <div class="col-lg-4">
+     <div class="customDiv">
+                      <img src="bootstrap/img/img2/images%20(2).jpg" width="400px" height="250px">
+               <P>PUSHPAK CITY</P> 
+                <h3>MUMBAI</h3>
+        
+            </div>
+  </div> 
+              <div class="col-lg-4">
+     <div class="customDiv">
+               <img src="bootstrap/img/img2/images%20(3).jpg" width="400px" height="250px">
+               <P>PARATA HIDUUU</P> 
+                <h3>INDORE</h3>
+             
+                  </div>
+  </div> 
+                  <div class="col-lg-4">
+     <div class="customDiv">
+                       <img src="bootstrap/img/img2/real_estate_property_home_1864135_835x547-m.jpg" width="400px" height="250px">
+               <P>APARNA COMPLEX9</P> 
+                <h3>DELHI</h3>
+                 </div>
+  </div>
+        
+    
+   </div>
+    </div>
+    
+    <div class="container-fluid foot">
+    <div class="row">
+       <div class="col-lg-4">
+        <div class="customdiv2">
+         <a href="index.html">  <img src="bootstrap/img/logo.PNG"> </a> 
+          <div class="ml-auto  text-below">© 2012-18 Locon Solutions Pvt. Ltd> </div>
+         
+           </div>
+        </div> 
+        
+           <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3> COMPANY </h3>
+            <a href="#">Careers</a><br>
+            <a href="#">About Us</a><br>
+            <a href="#">For Partners</a><br>
+            <a href="#">Terms</a><br>
+            <a href="#">Privacy Policy</a><br>
+            <a href="#">Contact Us</a><br>
+           
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+        <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3>  PARTNER </h3>
+         <a href="#">PropTiger</a><br>
+         <a href="#">Makaan</a><br>
+         <a href="#">IREF</a><br>
+         <a href="#">RealtyBI</a><br>
+         <a href="#">Realestate.com.au</a><br>
+         <a href="#">Realtor.com</a><br>
+           
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+        
+           <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3>  EXPLORE</h3>
+<a href="#">News</a><br>
+<a href="#">Data Sciences</a><br>
+<a href="#">Home Loans</a><br>
+<a href="#">Sitemap</a><br>
+<a href="#">Feedback</a><br>
+<a href="#">International</a><br>
+    </div>
+        
+       </div> 
+           <div class="col-md-4 col-lg-2">
+          <div class="customdiv2">
+              <h3> FOLLOW</h3>
+<a href="#">Facebook</a><br>
+<a href="#">Twitter</a><br>
+<a href="#">LinkedIn</a><br>
+<a href="#">Google+</a><br>
+  <a href="#">Instagram</a><br>
+<a href="#">Pinterest</a><br>
+<a href="#">Youtube</a><br>          
+         </div>
+        
+        
+        </div> 
+        </div>
+    
+    
+    </div>
+   
+    <script src="bootstrap/jq/jquery-3.2.1.min.js"></script>
+    <script>
+     
+    var blink = function() {
+    $('.carousel-caption a').animate({
+        opacity: '0'
+    }, function(){
+        $(this).animate({
+            opacity: '1'
+        }, blink);
+    });
+    }
+
+   blink();
+    
+  
+  
+                                             
+    </script>  
+    
+   
+    
+    <script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'top',
+		trigger : 'hover',
+        html : true,
+        content : '<div class="media"><a href="#" class="pull-left"><img src="bootstrap/img/app-download-300x222.jpg" width="100px" height="100px" class="media-object" alt="Sample Image"></a><div class="media-body"><h4 class="media-heading">HOUSING</h4><p>"Get Housing in your pocket.Download our top-rated app,its free and easy" </p></div></div>'
+    });
+});
+</script>
+    
+    
+   
+   
+ 
+    
+<!-- BODY ENDS -->
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>
